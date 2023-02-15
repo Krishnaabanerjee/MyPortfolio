@@ -1,0 +1,34 @@
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*-----------css variables-------*/
+:root{
+    --background-color: white;
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(to right, #660066 0%, #e35ea1 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+
+    /*------font-family variables----*/
+    --roboto: 'Roboto',cursive;
+    
+}
+
+.dark--theme{
+    --background-color: RoyalBlue;
+    --title-color: #fff;
+    --text-color: #EEE8AA;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(to right, #660066 0%, #e35ea1 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+
+}
+
