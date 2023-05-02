@@ -5,6 +5,11 @@
 @import url(./partials/global.css);
 
 
+@media(min-width: 768px) {
+    .news-input{
+        width: 50%;
+    }
+}
 
 
 /* navigation */
@@ -15,6 +20,7 @@ body{
 
 .navbar{
     height: 80px;
+    position: relative;
     
 }
 
@@ -64,6 +70,15 @@ body{
     cursor: pointer;
 }
 
+.logo1{
+    background: black;
+    color: white;
+    
+}
+
+
+
+
 
 
 /*-------------- banner area -------------------------------*/
@@ -102,6 +117,7 @@ body{
 .site-main .site-banner .site-title h4{
     font-size: 1.5rem;
     letter-spacing: 21px;
+    
 }
 .button.primary-button{
     background: linear-gradient(to right, #660066 0%, #e35ea1 100%);
@@ -143,8 +159,13 @@ body{
     
 }
 
-.another{
+/*.another{
     margin-top: 80px;
+}*/
+
+.l-img:hover{
+    transform: scale(1.5);
+    transition: transform .2s;
 }
 
 /*---------------------- about area ----------------------------*/
@@ -301,6 +322,7 @@ body{
 
 }
 .projects--img{
+
     width: 250px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
@@ -591,3 +613,43 @@ a{
   }
 
   ------*/
+
+  /*--------------------word animation--------------------*/
+
+
+  
+
+
+
+  .flipY {
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-360deg);
+    }
+  }
+  @keyframes depth {
+    0% {
+      text-shadow: 0 0 black;
+    }
+    25% {
+      text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+    }
+    50% {
+      text-shadow: 0 0 black;
+    }
+    75% {
+      text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+        -5px 0 black;
+    }
+    100% {
+      text-shadow: 0 0 black;
+    }
+  }
